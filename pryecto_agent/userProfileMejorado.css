@@ -1,0 +1,80 @@
+.user-profile {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.25rem;
+  max-width: 320px;
+}
+
+.user-profile--loading,
+.user-profile--error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.user-profile--loading {
+  color: #0073e6;
+  font-weight: 600;
+}
+
+.user-profile--error {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+}
+
+.user-profile__error-message {
+  color: #856404;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.user-profile__header {
+  margin-bottom: 1rem;
+}
+
+.user-profile__name {
+  font-size: 1.65rem;
+  margin: 0;
+  color: #222;
+}
+
+.user-profile__age {
+  margin: 0.35rem 0 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.user-profile__detail {
+  margin: 0.75rem 0;
+  color: #333;
+}
+
+.user-profile__button {
+  background-color: #0073e6;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.55rem 0.95rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.user-profile__button:hover,
+.user-profile__button:focus {
+  background-color: #005bb5;
+  outline: none;
+}
+
+.user-profile__button--retry {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.user-profile__button--retry:hover,
+.user-profile__button--retry:focus {
+  background-color: #ffb81d;
+}

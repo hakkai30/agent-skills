@@ -1,1 +1,27 @@
-<div id="cabecera"> <div class="logo"><img src="logo.png"></div> <div class="menu"> <div class="opcion" onclick="location.href='home.html'">Inicio</div> <div class="opcion" onclick="location.href='contacto.html'">Contacto</div> </div> </div> <div id="contenido"> <div class="titulo">Bienvenidos a mi web</div> <p>Esta es una web hecha solo con divs.</p> </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi web con semántica y accesible</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="cabecera">
+    <div class="logo">
+      <a href="home.html" aria-label="Ir a inicio">
+        <img src="logo.png" alt="Logo de la web">
+      </a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <a class="opcion" href="home.html">Inicio</a>
+      <a class="opcion" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1 class="titulo">Bienvenidos a mi web</h1>
+    <p>Esta es una web hecha solo con divs.</p>
+  </main>
+</body>
+</html>
